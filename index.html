@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kubernetes i Docker, Wytłumacz mi</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,900&amp;subset=latin-ext" rel="stylesheet" />
+    <!-- Shower Theme -->
+    <link rel="stylesheet" href="vendors/shower-ribbon/styles/screen-16x9.css" />
+    <link rel="stylesheet" href="vendors/shower-CezaryWalenciuk/styles/main.css" />
+    <!-- Prism.js -->
+    <link rel="stylesheet" href="vendors/prism/prism.css" />
+    <link rel="stylesheet" href="vendors/prism/custom-prism.css" />
+    <link rel="stylesheet" href="codegrid.css" />
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1>Kubernetes i Docker, Wytłumacz mi</h1>
+        <p></p>
+    </header>
+
+    <section class="slide front-page">
+
+        <div class="details">
+            <!-- 1. Avatar -->
+
+
+            <h2>Cezary Walenciuk</h2>
+
+            <!-- 3. Presentation title -->
+            <h2 class="bigbig"><strong style="font-size: 35px;  line-height: 1.3;">
+
+                    <span class="titlec1">Kubernetes i Docker</span>
+                    <br />
+                    <span class="titlec3">Wytłumacz mi i pokaż</span></strong></h2>
+
+
+
+            <!-- 5. Contact the speaker -->
+            <h2><a href="https://twitter.com/WalenciukC">@walenciukC</a></h2>
+        </div>
+        <div>
+
+
+            <!-- 2. Speaker -->
+
+        </div>
+        <div class="imag">
+            <img src="images/my-avatar.jpg" alt="Speaker">
+        </div>
+    </section>
+    <section class="slide creamPP smaller  compact ">
+        <ol class="nonumbers">
+            <li>Wielki skrót</li>
+            <li class="next">Infrastruktura to twój problem teraz</li>
+            <li class="next">Zalety kontenerów</li>
+            <li class="next">Zalety Kubernetes</li>
+            <li class="next">Przypadki użycia</li>
+            <li class="next">Docker, a Kubernetes, czyli problemy polityczne</li>
+            <li class="next">Kontener kontra maszyna wirtualna</li>
+            <li class="next">Uruchomienie u siebie Dockera</li>
+        </ol>
+    </section>
+    <section class="slide creamPP smaller  compact ">
+        <ol class="nonumbers">
+            <li class="next">Zbudujmy obraz aplikacji ".Apache"</li>
+            <li class="next">Zbudujmy obraz aplikacji "Go"</li>
+            <li class="next">Zbudujmy obraz aplikacji ".NET Core"</li>
+            <li class="next">Architektura Kubernetes, czyli jak to wszystko działa</li>
+            <li class="next">Uruchomienie u siebie Kubernetes</li>
+            <li class="next">Jak zrobić alias do polecenia kubectl</li>
+            <li class="next">Pracowanie z Pod-ami</li>
+            <li class="next">Kubernetes Services</li>
+        </ol>
+    </section>
+
+
+    <section class="slide creamGG">
+        <span class="shout colors" ><span>Wielki Skrót
+        </span></span>
+    </section>
+    <section class="slide creamGG  fullscreen">
+        <div class="grid-container-IconsText">
+            <div class="TitleMain"><h3>Zalety kontenerów</h3></div>
+          </div>
+    </section>
+    <section class="slide creamGG  fullscreen">
+        <div class="grid-container-IconsText">
+            <div class="Image1"><img src="pictures/01-PrzyspieszeniePracy.png" /></div>
+            <div class="Image2"> </div>
+            <div class="TitleMain"><h3>Zalety kontenerów</h3></div>
+            <div class="Title1"><h3>Przyspieszenie pracy</h3></div>
+            <div class="Title2"></div>
+          </div>
+    </section>
+    <section class="slide creamGG  fullscreen">
+        <div class="grid-container-IconsText">
+            <div class="Image1"><img src="pictures/01-PrzyspieszeniePracy.png" /></div>
+            <div class="Image2"> <img src="pictures/02-Eleminowaniekonfliktow.png" /></div>
+            <div class="TitleMain"><h3>Zalety kontenerów</h3></div>
+            <div class="Title1"><h3>Przyspieszenie pracy</h3></div>
+            <div class="Title2"><h3>Wyeliminowanie konfliktów</h3></div>
+          </div>
+    </section>
+    <section class="slide  creamGG fullscreen">
+        <div class="grid-container-IconsText">
+            <div class="Image1"><img src="pictures/01-PrzyspieszeniePracy.png" /></div>
+            <div class="Image2"> <img src="pictures/02-Eleminowaniekonfliktow.png" /></div>
+            <div class="Image3"><img src="pictures/03-SpojneSrodowiska.png" /></div>
+            <div class="TitleMain"><h3>Zalety kontenerów</h3></div>
+            <div class="Title1"><h3>Przyspieszenie pracy</h3></div>
+            <div class="Title2"><h3>Wyeliminowanie konfliktów</h3></div>
+            <div class="Title3"><h3>Spójne środowiska</h3></div>
+          </div>
+    </section>
+    <section class="slide creamGG  fullscreen">
+        <div class="grid-container-IconsText">
+            <div class="Image1"><img  src="pictures/01-PrzyspieszeniePracy.png" /></div>
+            <div class="Image2"> <img src="pictures/02-Eleminowaniekonfliktow.png" /></div>
+            <div class="Image3"><img src="pictures/03-SpojneSrodowiska.png" /></div>
+            <div class="Image4"><img src="pictures/04-Dostarczanieproduktuszybciej.png" /></div>
+            <div class="TitleMain"><h3>Zalety kontenerów</h3></div>
+            <div class="Title1"><h3>Przyspieszenie pracy</h3></div>
+            <div class="Title2"><h3>Wyeliminowanie konfliktów</h3></div>
+            <div class="Title3"><h3>Spójne środowiska</h3></div>
+            <div class="Title4"><h3>Dostarczanie aplikacji szybciej</h3></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-IconsText">
+            <div class="TitleMain"><h3>Zalety Kubernetes</h3></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-IconsText">
+            <div class="Image1"><img  src="pictures/05-SterowanieKontenerami.png" /></div>
+            <div class="TitleMain"><h3>Zalety Kubernetes</h3></div>
+            <div class="Title1"><h3>Sterowanie kontenerami</h3></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-IconsText">
+            <div class="Image1"><img  src="pictures/05-SterowanieKontenerami.png" /></div>
+            <div class="Image2"> <img src="pictures/06-ZeroDownTime.png" /></div>
+            <div class="TitleMain"><h3>Zalety Kubernetes</h3></div>
+            <div class="Title1"><h3>Sterowanie kontenerami</h3></div>
+            <div class="Title2"><h3>Zero Downtime Deployments</h3></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-IconsText">
+            <div class="Image1"><img  src="pictures/05-SterowanieKontenerami.png" /></div>
+            <div class="Image2"> <img src="pictures/06-ZeroDownTime.png" /></div>
+            <div class="Image3"><img src="pictures/07-Samoleczenie.png" /></div>
+            <div class="TitleMain"><h3>Zalety Kubernetes</h3></div>
+            <div class="Title1"><h3>Sterowanie kontenerami</h3></div>
+            <div class="Title2"><h3>Zero Downtime Deployments</h3></div>
+            <div class="Title3"><h3>Potrafi się naprawiać samoistnie</h3></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-IconsText">
+            <div class="Image1"><img  src="pictures/05-SterowanieKontenerami.png" /></div>
+            <div class="Image2"> <img src="pictures/06-ZeroDownTime.png" /></div>
+            <div class="Image3"><img src="pictures/07-Samoleczenie.png" /></div>
+            <div class="Image4"><img src="pictures/08-Scaling.png" /></div>
+            <div class="TitleMain"><h3>Zalety Kubernetes</h3></div>
+            <div class="Title1"><h3>Sterowanie kontenerami</h3></div>
+            <div class="Title2"><h3>Zero Downtime Deployments</h3></div>
+            <div class="Title3"><h3>Potrafi się naprawiać samoistnie</h3></div>
+            <div class="Title4"><h3>Skalowanie kontenerów</h3></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-9Squares">
+            <div class="TitleMain9Squares"><h3>Przpadki użycia</h3></div>
+            <div class="Square-1 square-background-orange"><span>Emulowanie produkcji</span></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-9Squares">
+            <div class="TitleMain9Squares"><h3>Przpadki użycia</h3></div>
+            <div class="Square-1 square-background-orange"><span>Emulowanie produkcji</span></div>
+            <div class="Square-2 square-background-pinkos"><span>Środowisko na Testy<br /> end-to-end</span></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-9Squares">
+            <div class="TitleMain9Squares"><h3>Przpadki użycia</h3></div>
+            <div class="Square-1 square-background-orange"><span>Emulowanie produkcji</span></div>
+            <div class="Square-2 square-background-pinkos"><span>Środowisko na Testy<br /> end-to-end</span></div>
+            <div class="Square-3 square-background-Blue"><span>Sekrety/Konfiguracje<br /> gotowe mechanizmy</span></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-9Squares">
+            <div class="TitleMain9Squares"><h3>Przpadki użycia</h3></div>
+            <div class="Square-1 square-background-orange"><span>Emulowanie produkcji</span></div>
+            <div class="Square-2 square-background-pinkos"><span>Środowisko na Testy<br /> end-to-end</span></div>
+            <div class="Square-3 square-background-Blue"><span>Sekrety/Konfiguracje<br /> gotowe mechanizmy</span></div>
+            <div class="Square-4 square-background-gray"><span>Pewność, że aplikacja<br />skaluje się poprawnie</span></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-9Squares">
+            <div class="TitleMain9Squares"><h3>Przpadki użycia</h3></div>
+            <div class="Square-1 square-background-orange"><span>Emulowanie produkcji</span></div>
+            <div class="Square-2 square-background-pinkos"><span>Środowisko na Testy<br /> end-to-end</span></div>
+            <div class="Square-3 square-background-Blue"><span>Sekrety/Konfiguracje<br /> gotowe mechanizmy</span></div>
+            <div class="Square-4 square-background-gray"><span>Pewność, że aplikacja<br />skaluje się poprawnie</span></div>
+            <div class="Square-5 square-background-Green"><span>Testy<br /> wydajnościowe</span></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-9Squares">
+            <div class="TitleMain9Squares"><h3>Przpadki użycia</h3></div>
+            <div class="Square-1 square-background-orange"><span>Emulowanie produkcji</span></div>
+            <div class="Square-2 square-background-pinkos"><span>Środowisko na Testy<br /> end-to-end</span></div>
+            <div class="Square-3 square-background-Blue"><span>Sekrety/Konfiguracje<br /> gotowe mechanizmy</span></div>
+            <div class="Square-4 square-background-gray"><span>Pewność, że aplikacja<br />skaluje się poprawnie</span></div>
+            <div class="Square-5 square-background-Green"><span>Testy<br /> wydajnościowe</span></div>
+            <div class="Square-6 square-background-purple2"><span>Pomoc dla DEV-0PS<br /> aby rozwiązywali problem</span></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-9Squares">
+            <div class="TitleMain9Squares"><h3>Przpadki użycia</h3></div>
+            <div class="Square-1 square-background-orange"><span>Emulowanie produkcji</span></div>
+            <div class="Square-2 square-background-pinkos"><span>Środowisko na Testy<br /> end-to-end</span></div>
+            <div class="Square-3 square-background-Blue"><span>Sekrety/Konfiguracje<br /> gotowe mechanizmy</span></div>
+            <div class="Square-4 square-background-gray"><span>Pewność, że aplikacja<br />skaluje się poprawnie</span></div>
+            <div class="Square-5 square-background-Green"><span>Testy<br /> wydajnościowe</span></div>
+            <div class="Square-6 square-background-purple2"><span>Pomoc dla DEV-0PS<br /> aby rozwiązywali problem</span></div>
+            <div class="Square-7 square-background-orange"><span>Ciekawe strategie<br /> wdrażania aplikacji</span></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-9Squares">
+            <div class="TitleMain9Squares"><h3>Przpadki użycia</h3></div>
+            <div class="Square-1 square-background-orange"><span>Emulowanie produkcji</span></div>
+            <div class="Square-2 square-background-pinkos"><span>Środowisko na Testy<br /> end-to-end</span></div>
+            <div class="Square-3 square-background-Blue"><span>Sekrety/Konfiguracje<br /> gotowe mechanizmy</span></div>
+            <div class="Square-4 square-background-gray"><span>Pewność, że aplikacja<br />skaluje się poprawnie</span></div>
+            <div class="Square-5 square-background-Green"><span>Testy<br /> wydajnościowe</span></div>
+            <div class="Square-6 square-background-purple2"><span>Pomoc dla DEV-0PS<br /> aby rozwiązywali problem</span></div>
+            <div class="Square-7 square-background-orange"><span>Ciekawe strategie<br /> wdrażania aplikacji</span></div>
+            <div class="Square-8 square-background-Blue"><span>Migracja<br /> do chmury</span></div>
+          </div>
+    </section>
+    <section class="slide creamPP  fullscreen">
+        <div class="grid-container-9Squares">
+            <div class="TitleMain9Squares"><h3>Przpadki użycia</h3></div>
+            <div class="Square-1 square-background-orange"><span>Emulowanie produkcji</span></div>
+            <div class="Square-2 square-background-pinkos"><span>Środowisko na Testy<br /> end-to-end</span></div>
+            <div class="Square-3 square-background-Blue"><span>Sekrety/Konfiguracje<br /> gotowe mechanizmy</span></div>
+            <div class="Square-4 square-background-gray"><span>Pewność, że aplikacja<br />skaluje się poprawnie</span></div>
+            <div class="Square-5 square-background-Green"><span>Testy<br /> wydajnościowe</span></div>
+            <div class="Square-6 square-background-purple2"><span>Pomoc dla DEV-0PS<br /> aby rozwiązywali problem</span></div>
+            <div class="Square-7 square-background-orange"><span>Ciekawe strategie<br /> wdrażania aplikacji</span></div>
+            <div class="Square-8 square-background-Blue"><span>Migracja<br /> do chmury</span></div>
+            <div class="Square-9 square-background-pinkos"><span>Scenariusze do<br /> CI/CD</span></div>
+          </div>
+    </section>
+    
+    <!-- <div class="progress"></div> -->
+    <footer class="badge badge-top-left">
+        <a href="#" class="fullscreen">Fullscreen</a>
+    </footer>
+
+    <script src="vendors/gamepad/gamepad.js"></script>
+    <script src="vendors/shower/shower.min.js"></script>
+    <script src="vendors/shower-gamepad/shower.gamepad.js"></script>
+
+    <!-- Prism.js -->
+    <script src="vendors/prism/prism.js"></script>
+    <script src="vendors/prism/custom-prism.js"></script>
+
+</body>
+
+</html>

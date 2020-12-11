@@ -1,0 +1,143 @@
+using System;
+
+namespace Sample4
+{
+    public class Product
+    {
+        public string Name { get; set; }
+        public int Quantity { get; set; }
+        public decimal Price { get; set; }
+    }
+
+    public class User
+    {
+        public string Country { get; set; }
+    }
+
+    // Discounts, coupons and taxes are not Order dependent, the same discounts and taxes might be applied to other types
+    public class Order
+    {
+        private readonly User _user;
+        private readonly Product[] _products;
+        private readonly string[] _coupons;
+
+        public Order(User user, Product[] products, string[] coupons)
+        {
+            _user = user;
+            _products = products;
+            _coupons = coupons;
+        }
+
+        public decimal CalculateTotal()
+        {
+            decimal total = 0;
+            for (var i = 0; i < _products.Length; i++)
+            {
+                total += _products[i].Quantity * _products[i].Price;
+            }
+
+            // Apply regional discounts.
+            switch (_user.Country)
+            {
+                case "US": total *= 0.65M; break;
+                case "RU": total *= 0.70M; break;
+                case "CN": total *= 0.75M; break;
+                case "GB": total *= 0.80M; break;
+                case "IT": total *= 0.85M; break;
+                case "DE": total *= 0.90M; break;
+            }
+
+            // Apply provided coupons
+            foreach (var coupon in _coupons)
+            {
+                if (coupon == "DIS_10")
+                {
+                    total -= 10;
+                }
+                if (coupon == "DIS_P2")
+                {
+                    total *= 0.98M;
+                }
+            }
+
+            // Add extra tax if total in range and customer from DE or RU
+            if (total >= 100M && total <= 500M && _user.Country == "DE" || _user.Country == "RU")
+            {
+                total *= 1.03M;
+            }
+
+            // First day of the month discount
+            if (DateTime.Now.Day == 1)
+            {
+                total *= 0.95M;
+            }
+
+            return Math.Round(total, 2, MidpointRounding.ToZero);
+        }
+    }
+
+    class SampleProgramFour
+    {
+        static void Main(string[] args)
+        {
+            var user = new User { Country = "GB" };
+
+            var products = new[]
+            {
+                new Product { Name = "PROD_1", Quantity = 1, Price = 25.00M },
+                new Product { Name = "PROD_2", Quantity = 1, Price = 10.50M },
+                new Product { Name = "PROD_3", Quantity = 2, Price = 8.20M },
+                new Product { Name = "PROD_4", Quantity = 1, Price = 19.99M },
+                new Product { Name = "PROD_5", Quantity = 5, Price = 3.22M }
+            };
+
+            var coupons = new[]
+            {
+                "DIS_10",
+                "INVALID",
+                "DIS_P2"
+            };
+
+            var order = new Order(user, products, coupons);
+            var total = order.CalculateTotal();
+
+            Console.WriteLine("Total: " + "$" + total);
+        }
+    }
+}
+
+class ThreadsExample
+{
+  static void Main(string[] args)
+  {
+    var tasks = new List<Task>();
+
+    for (var i = 0; i < 3; i++)
+    {
+      tasks.Add(Task.Factory.StartNew(() =>
+      {
+        Thread.Sleep(i * 1000);
+        Console.WriteLine($"Index: {i}");
+      }));
+    }
+
+    Task.WaitAll(tasks.ToArray());
+  }
+}
+
+class HttpClientExample
+  {
+      static async Task Main(string[] args)
+      {
+          // Initialization of all variables removed for clarity
+
+          for (var i = 0; i < 10000; i++)
+          {
+              using (var httpClient = new HttpClient())
+              {
+                  var result = await httpClient.GetAsync(path);
+                  result.EnsureSuccessStatusCode();
+              }
+          }
+      }
+  }
