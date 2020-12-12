@@ -113,6 +113,13 @@
         <span class="shout colors" ><span>Infrastruktura to teraz twój problem
         </span></span>
     </section>
+    <section class="slide creamGG   compact ">
+        <h2>Infrastruktura</h2>
+        <ol class="nonumbers">
+            <li class="next">Każda aplikacja powinna być odpowiedzialna za jedną rzecz</li>
+            <li class="next">Daje możliwość skalowania horyzontalnego w zależności od odpowiedzialności</li>
+        </ol>
+    </section>
 
     <section class="slide creamGG  fullscreen">
         <div class="grid-container-IconsText">
@@ -332,6 +339,42 @@
             <li class="next">Zainstalować potem Hyper-V</li>
             <li class="next">Zainstalować potem Dockera</li>
         </ol>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/instalacja/kubernetes-02.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/instalacja/kubernetes-03.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/instalacja/kubernetes-04.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/instalacja/kubernetes-05.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/instalacja/kubernetes-08.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/instalacja/kubernetes-09.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
     </section>
     <section class="slide creamGG">
         <span class="shout colors" ><span>Zbudujmy coś
@@ -882,6 +925,10 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
+    <section class="slide creamGG">
+        <span class="shout colors" ><span>https://github.com/dotnet/dotnet-docker
+        </span></span>
+    </section>
     <section class="slide" style="background-color:black">
         <figure>
             <img class="cover" src="pictures/budowanieNet-10.PNG" alt="blog">
@@ -1126,14 +1173,113 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
-
-
-
-    <section class="slide creamPP  fullscreen">
-        <div class="grid-container-IconsText">
-            <div class="TitleMain"><h3>Zalety Kubernetes</h3></div>
-          </div>
+    <section class="slide creamGG">
+        <span class="shout colors" ><span>Zbudujmy obraz Python
+        </span></span>
     </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/budowaniePython-01.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">Docker file</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 25px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 25px !important;">
+                        FROM python:3
+
+                        ADD my_script.py /
+                        
+                        RUN pip install pystrich
+                        
+                        CMD [ "python", "./my_script.py" ]
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">myscript.py</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 25px;overflow: hidden;  " class="language-python">
+                    <code style="line-height: 25px !important;">
+                        from pystrich.datamatrix import DataMatrixEncoder
+
+                        encoder = DataMatrixEncoder('This is a DataMatrix.')
+                        encoder.save('./datamatrix_test.png')
+                        print(encoder.get_ascii())
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/budowaniePython-02.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/budowaniePython-03.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide creamGG">
+        <span class="shout colors" ><span>Przykład dobrego dockerfile na podstawie NodeJS
+        </span></span>
+    </section>
+
+    <section class="slide creamGG   compact ">
+        <h2>Podsumowanie Docker</h2>
+        <ol class="nonumbers">
+            <li class="next">Uważaj na kontekst i pliki wrzucane do obrazu w trakcie build</li>
+            <li class="next">Kolejność wykonywania instrukcji COPY,RUN czy ADD ma znaczenie</li>
+        </ol>
+    </section>
+    <section class="slide creamGG   compact ">
+        <h2>Podsumowanie Docker</h2>
+        <ol class="nonumbers">
+            <li class="next">Użyj obrazów bazowych</li>
+            <li class="next">Buduj obrazy w docker wykorzystując wieloetapowy build</li>
+        </ol>
+    </section>
+
+    <section class="slide creamGG">
+        <span class="shout colors" ><span>Pogadajmy o Kubernetes
+        </span></span>
+    </section>
+    <section class="slide creamGG">
+        <span class="shout colors" ><span>Zalety Kubernetes
+        </span></span>
+    </section>
+
+
     <section class="slide creamPP  fullscreen">
         <div class="grid-container-IconsText">
             <div class="Image1"><img  src="pictures/05-SterowanieKontenerami.png" /></div>
@@ -1174,14 +1320,7 @@
             <div class="Title4"><h3>Skalowanie kontenerów</h3></div>
           </div>
     </section>
-
-    <section class="slide creamGG">
-        <span class="shout colors" ><span>Jak dodać alias do PowerShell-a?
-        </span></span>
-    </section>
-
-
-    <section class="slide creamGG">
+    <section class="slide creamPP">
         <span class="shout colors" ><span>Jak się uczyć Kubernetesa ?
         </span></span>
     </section>
@@ -1191,6 +1330,24 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Architektura Kubernetes
+        </span></span>
+    </section>
+
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Jak dodać alias do PowerShell-a?
+        </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/jakdodacalias.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+
+
+
     
     <!-- <div class="progress"></div> -->
     <footer class="badge badge-top-left">
