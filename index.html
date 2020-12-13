@@ -84,6 +84,12 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/ASPNETCOREDOCKER_2.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
     <section class="slide creamGG">
         <span class="shout colors" ><span>Wielki Skrót
         </span></span>
@@ -373,6 +379,12 @@
     <section class="slide" style="background-color:black">
         <figure>
             <img class="cover" src="pictures/instalacja/kubernetes-09.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/pomocVisualStudioPod.gif" alt="blog">
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
@@ -787,6 +799,12 @@
     <section class="slide" style="background-color:black">
         <figure>
             <img class="cover" src="pictures/DOCKERignore.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/DOCKERignore_01.PNG" alt="blog">
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
@@ -1274,12 +1292,25 @@
         <span class="shout colors" ><span>Pogadajmy o Kubernetes
         </span></span>
     </section>
+    <section class="slide creamGG   compact ">
+        <h2>Kubernetes</h2>
+        <ol class="nonumbers">
+            <li class="next">Potrzebujemy oczywiście czegoś co by zarządzał kontenerami</li>
+            <li class="next">Swoją drogą jak aplikację (rozbitę na mikroserwisy) 
+                pomiędzy kontenerami mają ze sobą gadać</li>
+        </ol>
+    </section>
+    <section class="slide creamGG   compact ">
+        <h2>Kubernetes. Po co ?</h2>
+        <ol class="nonumbers">
+            <li class="next">Co jeśli jedna z moich aplikacji w konterze się wywali ?</li>
+            <li class="next">Co jeśli jedna z moich aplikacji w konterze zajmuje za dużo pamięci ?</li>
+        </ol>
+    </section>
     <section class="slide creamGG">
         <span class="shout colors" ><span>Zalety Kubernetes
         </span></span>
     </section>
-
-
     <section class="slide creamPP  fullscreen">
         <div class="grid-container-IconsText">
             <div class="Image1"><img  src="pictures/05-SterowanieKontenerami.png" /></div>
@@ -1320,6 +1351,710 @@
             <div class="Title4"><h3>Skalowanie kontenerów</h3></div>
           </div>
     </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/kubernetest/pamietajokontekstach.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+
+
+
+
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Architektura Kubernetes
+        </span></span>
+    </section>
+
+
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Node Kubelet
+        </span></span>
+    </section>
+
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Deklaratywny model i Desired State
+        </span></span>
+    </section>
+
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Pody (kubeletes)
+        </span></span>
+    </section>
+
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Sieć pomiędzy podami
+        </span></span>
+    </section>
+
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Deployment z Kubernetes
+        </span></span>
+    </section>
+
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>API Kubernetes
+        </span></span>
+    </section>
+
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Przepływ pracy z Kubernetes
+        </span></span>
+    </section>
+
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Zbudjmy Coś
+        </span></span>
+    </section>
+
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Tworzenie YAML, manifest Pod-u
+        </span></span>
+    </section>
+
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/01.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/02.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">Docker file dla ASP.NET CORE For .Net 5</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 25px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 25px !important;">
+                        FROM mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim AS base
+                        WORKDIR /app
+                        EXPOSE 90
+                        EXPOSE 443
+                        ENV ASPNETCORE_URLS=http://+:90
+                        
+                        FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
+                        WORKDIR /src
+                        COPY ["myaspnetcorefornet5service.csproj", ""]
+                        RUN dotnet restore "./myaspnetcorefornet5service.csproj"
+                        COPY . .
+                        WORKDIR "/src/."
+                        RUN dotnet build "myaspnetcorefornet5service.csproj" -c Release -o /app/build
+                        
+                        FROM build AS publish
+                        RUN dotnet publish "myaspnetcorefornet5service.csproj" -c Release -o /app/publish
+                        
+                        FROM base AS final
+                        WORKDIR /app
+                        COPY --from=publish /app/publish .
+                        ENTRYPOINT ["dotnet", "myaspnetcorefornet5service.dll"]
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">IndexController</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 25px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 25px !important;">
+                        [ApiController]
+                        [Route("/")]
+                        private readonly ILogger&lt;IndexController&gt; _logger;
+                    
+                        public IndexController(ILogger&lt;IndexController&gt; logger)
+                        {
+                            _logger = logger;
+                        }
+                                            
+                        [HttpGet]
+                        public string Index()
+                        {
+                            return &quot;Hello from My AspNetCore For Net 5 Service&quot;;
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">Node JS</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 25px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 25px !important;">
+                        const express = require("express");
+                        const app = express();
+                        
+                        app.listen(1111, function () {
+                          console.log("listening on 1111");
+                        });
+                        
+                        app.get("/", (req, res) => {
+                          res.send("Hejka z Node JS");
+                        });
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">Docker file dla Node Js</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 25px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 25px !important;">
+                        FROM node:13
+
+                        WORKDIR /app
+                        
+                        COPY package.json /app
+                        
+                        RUN npm install
+                        
+                        COPY . /app
+                        
+                        CMD node server.js
+                        
+                        EXPOSE 1111
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Zanim zaczniemy warto powiedzieć coś kontekstach
+        </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/kubernetest/pamietajokontekstach.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/kubernetest/pamietajokontekstach_03.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/kubernetest/pamietajokontekstach_02.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/kubernetest/pamietajokontekstach_04.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/01.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/02.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/03.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/04.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/05.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/06.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/07.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/08.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/09.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/10.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/11.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/12.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/13.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/14.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/15.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/16.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/17.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/18.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/19.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/20.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/21.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/22.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/23.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/24.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/25.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/26.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/01.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/01.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/01.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/01.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Sekrety czyli konfiguracje
+        </span></span>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">Docker file dla przykładu z sekretami</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 25px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 25px !important;">
+                        FROM mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim AS base
+                        WORKDIR /app
+                        EXPOSE 5555
+                        EXPOSE 443
+                        ENV ASPNETCORE_URLS=http://+:5555
+                        
+                        FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
+                        WORKDIR /src
+                        COPY ["aspnet-core-secrets.csproj", ""]
+                        RUN dotnet restore "./aspnet-core-secrets.csproj"
+                        COPY . .
+                        WORKDIR "/src/."
+                        RUN dotnet build "aspnet-core-secrets.csproj" -c Release -o /app/build
+                        
+                        FROM build AS publish
+                        RUN dotnet publish "aspnet-core-secrets.csproj" -c Release -o /app/publish
+                        
+                        FROM base AS final
+                        WORKDIR /app
+                        COPY --from=publish /app/publish .
+                        ENTRYPOINT ["dotnet", "aspnet-core-secrets.dll"]
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">Docker file dla przykładu z sekretami</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 20px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 20px !important;">
+                        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+                        {
+                            var builder = new ConfigurationBuilder()
+                                .SetBasePath(env.ContentRootPath)
+                                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                                .AddJsonFile("secrets/appsettings.secrets.json", optional: true, reloadOnChange: true)
+                                .AddEnvironmentVariables();
+                
+                            Configuration = builder.Build();
+                
+                            if (env.IsDevelopment())
+                            {
+                                app.UseDeveloperExceptionPage();
+                            }
+                
+                            app.Run(async (context) =>
+                            {
+                                var message = $"Host: {Environment.MachineName}\n" +
+                                    $"EnvironmentName: {env.EnvironmentName}\n" +
+                                    $"Secret value: {Configuration["Database:ConnectionString"]}\n" +
+                                    $"Secret value: {Configuration["Database:Password"]}";
+                                await context.Response.WriteAsync(message);
+                            });
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">appsettings.json</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 20px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 20px !important;">
+                        {
+                            "Database": {
+                                "ConnectionString": "lokalny connection string",
+                                "Password": "Lokalne Haslo"
+                            }
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/sekretyKubernetes/01.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/sekretyKubernetes/02.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/sekretyKubernetes/03.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">deployment.yaml</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 10px;overflow: hidden;  " class="language-yaml">
+                    <code style="line-height: 10px !important;">
+                        apiVersion: apps/v1
+                        kind: Deployment
+                        metadata:
+                          name: aspnet-core-secrets-demo
+                        spec:
+                          replicas: 3
+                          selector:
+                            matchLabels:
+                              app: aspnet-core-secrets-demo
+                          template:
+                            metadata:
+                              labels:
+                                app: aspnet-core-secrets-demo
+                            spec:
+                              containers:
+                              - name: aspnet-core-secrets-demo
+                                image: aspnet-core-secrets:coolest
+                                ports:
+                                - containerPort: 5555
+                                env:
+                                - name: "ASPNETCORE_ENVIRONMENT"
+                                  value: "Kubernetes"
+                                volumeMounts:
+                                - name: secrets
+                                  mountPath: /app/secrets
+                                  readOnly: true
+                              volumes:
+                              - name: secrets
+                                secret:
+                                  secretName: secret-appsettings
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">service.yaml</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 10px;overflow: hidden;  " class="language-yaml">
+                    <code style="line-height: 10px !important;">
+                        apiVersion: v1
+                        kind: Service
+                        metadata:
+                          name: aspnet-core-secrets-demo-service
+                        spec:
+                          selector:
+                            app: aspnet-core-secrets-demo
+                          ports:
+                          - protocol: TCP
+                            port: 5555
+                            targetPort: 5555
+                          type: LoadBalancer
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle"> 
+                <h2 class="headerCODE">appsettings.secrets.json</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 10px;overflow: hidden;  " class="language-json">
+                    <code style="line-height: 10px !important;">
+                        {
+                            "Database": {
+                              "ConnectionString": "SEKRETNE connection string",
+                              "Password": "SEKRETNE Haslo"
+                            }
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/sekretyKubernetes/04.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/sekretyKubernetes/05.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Jak dodać alias do PowerShell-a?
+        </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/alias/powershellalias.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/alias/powershellalias-01.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+
+
+
     <section class="slide creamPP">
         <span class="shout colors" ><span>Jak się uczyć Kubernetesa ?
         </span></span>
@@ -1330,23 +2065,6 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
-    <section class="slide creamPP">
-        <span class="shout colors" ><span>Architektura Kubernetes
-        </span></span>
-    </section>
-
-    <section class="slide creamPP">
-        <span class="shout colors" ><span>Jak dodać alias do PowerShell-a?
-        </span></span>
-    </section>
-    <section class="slide" style="background-color:black">
-        <figure>
-            <img class="cover" src="pictures/jakdodacalias.PNG" alt="blog">
-            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
-        </figure>
-    </section>
-
-
 
     
     <!-- <div class="progress"></div> -->
