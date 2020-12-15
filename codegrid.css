@@ -160,8 +160,18 @@ display: flex;
     grid-area: HeaderTitle;
     background-color: #505363;
     background-color: var(--color-b);
+    background-color: var(--for-slides-ALT6-1);
 
 }
+.HeaderTitle.PP { 
+  padding-left: 10px;
+  grid-area: HeaderTitle;
+  background-color: #505363;
+  background-color: var(--for-slides-ALT5-1);
+
+}
+
+
 .HeaderTitle  h2 {
     font-size: 28px !important;;
     padding-top: 14px !important;
