@@ -50,7 +50,7 @@
             <img src="images/my-avatar.jpg" alt="Speaker">
         </div>
     </section>
-    <section class="slide creamPP smaller  compact ">
+    <!-- <section class="slide creamPP smaller  compact ">
         <ol class="nonumbers">
             <li>Wielki skrót</li>
             <li class="next">Infrastruktura to twój problem teraz</li>
@@ -73,7 +73,7 @@
             <li class="next">Pracowanie z Pod-ami</li>
             <li class="next">Kubernetes Services</li>
         </ol>
-    </section>
+    </section> -->
     <section class="slide creamGG">
         <span class="shout colors" ><span>Jaki ja problem widzę, z Kubernetesem i Dockerem
         </span></span>
@@ -90,9 +90,47 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Na co jak k###wa patrze
+        </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/facepalm1.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/facepalm2.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide creamGG">
+        <span class="shout colors" ><span>Oglądasz jakiś potem tutorial na YT
+        </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/facepalm.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/od kiedy ty umiesz docker Kubernetes.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
     <section class="slide creamGG">
         <span class="shout colors" ><span>Wielki Skrót
         </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KUBERNESTES0.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Cezary Walenciuk</figcaption>
+        </figure>
     </section>
     <section class="slide" style="background-color:black">
         <figure>
@@ -100,8 +138,43 @@
             <figcaption class="white">Copyright © 2020 Cezary Walenciuk</figcaption>
         </figure>
     </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KUBERNESTES2.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+    <section class="slide creamGG   compact ">
+        <h2>Jak to wygląda ? Jeśli mówimy tylko o Docker</h2>
+        <ol class="nonumbers">
+            <li class="next">Docker tworzy obraz poprzez dockerfile. </li>
+            <li class="next">Docker uruchamia obraz i teraz "to" nazywamy kontenerem</li>
+        </ol>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/obrazy.gif" alt="blog">
+            <figcaption class="white">Copyright © 2020 Cezary Walenciuk</figcaption>
+        </figure>
+    </section>
+    <section class="slide creamPP   compact ">
+        <h2>Jak to wygląda ? Jeśli mówimy  o Kubernetesie</h2>
+        <ol class="nonumbers">
+            <li class="next">Sam docker to za mało?</li>
+            <li class="next">Więc korzystasz z Dockera lub czegoś innego aby stworzyć obraz</li>
+            <li class="next">Ten obraz jest sterowany bardzo zaawansowanie przez Kubernetes</li>
+        </ol>
+    </section>
+    <section class="slide creamGG">
+        <span class="shout colors" ><span>Docker tworzy obraz<br />Uruchomiony obraz to kontener
+        </span></span>
+    </section>
     <section class="slide creamGG">
         <span class="shout colors" ><span>Co to oznacza, że aplikacja jest skonteneryzowana
+        </span></span>
+    </section>
+    <section class="slide creamGG">
+        <span class="shout colors" ><span>Zamiast gadać to lepiej to pokazać
         </span></span>
     </section>
     <section class="slide creamGG">
@@ -111,22 +184,29 @@
     <section class="slide creamGG   compact ">
         <h2>Po co to? Jak to w chmurze ?</h2>
         <ol class="nonumbers">
-            <li class="next">Możesz zainstalować OS (Linux, Windows) na serwerze i OS wyodrębnia zasoby i procesy</li>
-            <li class="next">Instalujesz Kubernetes w chmurze i wyodrębnia on zasoby w chmurze do mikroserwisów i dla natywnych aplikacji chmurowych</li>
+            <li class="next">ALBO...Możesz zainstalować OS (Linux, Windows) na serwerze i OS wyodrębnia zasoby i procesy</li>
+            <li class="next">ALBO...Instalujesz Kubernetes w chmurze i wyodrębnia on zasoby w chmurze do mikroserwisów i dla natywnych aplikacji chmurowych</li>
         </ol>
     </section>
-    <section class="slide creamGG">
+    <section class="slide creamPP">
         <span class="shout colors" ><span>Infrastruktura to teraz twój problem
         </span></span>
     </section>
-    <section class="slide creamGG   compact ">
+    <section class="slide creamPP   compact ">
         <h2>Infrastruktura</h2>
         <ol class="nonumbers">
+            <li class="next">W sumie Infrastruktura to zawsze był problem programisty tylko starało się to zwalić na adminów, architektów</li>
             <li class="next">Każda aplikacja powinna być odpowiedzialna za jedną rzecz</li>
             <li class="next">Daje możliwość skalowania horyzontalnego w zależności od odpowiedzialności</li>
         </ol>
     </section>
-
+    <section class="slide creamPP   compact ">
+        <h2>Infrastruktura</h2>
+        <ol class="nonumbers">
+            <li class="next">O samej Infrastrukturze można by było zrobić osobny webinar</li>
+            <li class="next">Skupmy się bardziej na tym o co w tym chodzi</li>
+        </ol>
+    </section>
     <section class="slide creamGG  fullscreen">
         <div class="grid-container-IconsText">
             <div class="TitleMain"><h3>Zalety kontenerów</h3></div>
@@ -184,7 +264,7 @@
         </ol>
     </section>
     <section class="slide creamGG">
-        <span class="shout colors" ><span>Zbuduj raz<br/> zrób deploy wszędzie
+        <span class="shout colors" ><span>Zbuduj raz<br/> Zrób deploy wszędzie
         </span></span>
     </section>
     <section class="slide creamGG">
@@ -299,7 +379,7 @@
         </span></span>
     </section>
     <section class="slide creamGG   compact ">
-        <h2>Obie firmy się lubią</h2>
+        <h2>Obie firmy się nie lubią</h2>
         <ol class="nonumbers">
             <li class="next">Była bitwa pomiędzy Dokcer Swarn a Kubernetes w 2016-2017</li>
             <li class="next">W 2020.12 Kubernetes chce pozbyć Dockershim</li>
@@ -312,15 +392,15 @@
         </figure>
     </section>
     <section class="slide creamGG   compact ">
-        <h2>Dobra wiadomość i złe wiadomości</h2>
+        <h2>Złe wiadomości</h2>
         <ol class="nonumbers">
             <li class="next">Docker nie został stworzony z myślą, aby działać wewnątrz Kubernetesa</li>
-            <li class="next">Obraz (konetnery) stworze przez dockera nadal będą działać w Kubernetes</li>
-            <li class="next">Jednak może chcesz coś co jest kontatybilne z Container Runtime Interface </li>
+            <li class="next">Obraz (kontenery) stworze przez dockera nadal będą działać w Kubernetes</li>
+            <li class="next">Jednak może chcesz coś co jest kompatybilne z Container Runtime Interface </li>
         </ol>
     </section>
     <section class="slide creamGG   compact ">
-        <h2>Jaki mamy jeszcze alternatyw do Dockera</h2>
+        <h2>Jakie mamy jeszcze alternatyw do Dockera jeżeli chodzi o obsługę obrazów</h2>
         <ol class="nonumbers">
             <li class="next">ContainerD</li>
             <li class="next">Cri-o</li>
@@ -333,7 +413,18 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
-
+    <section class="slide creamGG   compact ">
+        <h2>Jakie mamy jeszcze alternatyw do Dockera jeżeli chodzi o budowanie obrazów</h2>
+        <ol class="nonumbers">
+            <li class="next">Buildah</li>
+        </ol>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/buildah.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
     <section class="slide creamGG">
         <span class="shout colors" ><span>Co trzeba mieć, aby zainstalować Dockera na swojej maszynie
         </span></span>
@@ -393,7 +484,7 @@
         </span></span>
     </section>
     <section class="slide creamGG">
-        <span class="shout colors" ><span>Zbudujmy statyczną stronę na serwerze Appache
+        <span class="shout colors" ><span>Zbudujmy statyczną stronę na serwerze Apache
         </span></span>
     </section>
     <section class="slide" style="background-color:black">
@@ -575,6 +666,12 @@
     <section class="slide creamGG">
         <span class="shout colors" ><span>Zbudujmy aplikację Go
         </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/od kiedy ty umiesz Go.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
     </section>
     <section class="slide" style="background-color:black">
         <figure>
@@ -1048,6 +1145,12 @@
     </section>
     <section class="slide" style="background-color:black">
         <figure>
+            <img class="cover" src="pictures/od kiedy ty umiesz Jave.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
             <img class="cover" src="pictures/budowanieJavaSpring-01.PNG" alt="blog">
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
@@ -1185,6 +1288,12 @@
     </section>
     <section class="slide" style="background-color:black">
         <figure>
+            <img class="cover" src="pictures/od kiedy ty umiesz Pythona.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
             <img class="cover" src="pictures/budowaniePython-01.PNG" alt="blog">
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
@@ -1260,7 +1369,54 @@
         <span class="shout colors" ><span>Przykład dobrego dockerfile na podstawie NodeJS
         </span></span>
     </section>
-
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/od kiedy ty umiesz nodejs.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/poprawka/01.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/poprawka/02.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/poprawka/03.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/poprawka/04.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/poprawka/05.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/poprawka/06.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/poprawka/07.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
     <section class="slide creamGG   compact ">
         <h2>Podsumowanie Docker</h2>
         <ol class="nonumbers">
@@ -1286,14 +1442,15 @@
             <li class="next">Potrzebujemy oczywiście czegoś co by zarządzał kontenerami</li>
             <li class="next">Swoją drogą jak aplikację (rozbitę na mikroserwisy) 
                 pomiędzy kontenerami mają ze sobą gadać</li>
-            <li class="next">Co jęsli chce aby te aplikacje były zamknięte w sobie</li>
+            <li class="next">Co jeśli chce aby te aplikacje były zamknięte w sobie</li>
         </ol>
     </section>
     <section class="slide creamPP   compact ">
         <h2>Kubernetes. Po co ?</h2>
         <ol class="nonumbers">
             <li class="next">Co jeśli jedna z moich aplikacji w konterze się wywali ?</li>
-            <li class="next">Co jeśli jedna z moich aplikacji w konterze zajmuje za dużo pamięci ?</li>
+            <li class="next">Co jeśli jedna z moich aplikacji w konterze zajmuje za dużo pamięci RAM?</li>
+            <li class="next">Co jeśli chce mieć przygotowaną konfigurację</li>
         </ol>
     </section>
     <section class="slide creamPP">
@@ -1348,8 +1505,280 @@
         <span class="shout colors" ><span>Architektura Kubernetes
         </span></span>
     </section>
-
-
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-01.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-02.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-03.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Master Node
+        </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-04.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-05.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-07.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-08.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-10.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-12.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-13.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-14.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-15.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-16.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-17.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-18.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-19.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-20.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-21.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-22.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-23.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-24.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-25.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-26.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-28.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-29.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-30.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Node
+        </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-32.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-33.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-34.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Dekleratywny styl i stan obserwowany
+        </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-35.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-37.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-38.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-39.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-40.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-39.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Pody (kubeletes)
+        </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-41.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-42.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-43.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Dlaczego tak nie robić? 
+        </span></span>
+    </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Ciężko to się skaluje w chmurze
+        </span></span>
+    </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Pody i Sieć
+        </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-44.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-45.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/kubernetes-46.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
     <section class="slide creamPP">
         <span class="shout colors" ><span>Node Kubelet
         </span></span>
@@ -1360,30 +1789,13 @@
         </span></span>
     </section>
 
-    <section class="slide creamPP">
-        <span class="shout colors" ><span>Pody (kubeletes)
-        </span></span>
-    </section>
 
-    <section class="slide creamPP">
-        <span class="shout colors" ><span>Sieć pomiędzy podami
-        </span></span>
-    </section>
 
-    <section class="slide creamPP">
-        <span class="shout colors" ><span>Deployment z Kubernetes
-        </span></span>
-    </section>
 
-    <section class="slide creamPP">
-        <span class="shout colors" ><span>API Kubernetes
-        </span></span>
-    </section>
 
-    <section class="slide creamPP">
-        <span class="shout colors" ><span>Przepływ pracy z Kubernetes
-        </span></span>
-    </section>
+
+
+
 
     <section class="slide creamPP">
         <span class="shout colors" ><span>Zbudujmy  Coś
@@ -1909,18 +2321,27 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
-        <section class="slide creamPP">
-        <span class="shout colors" ><span>Twoja aplikacja jednak wciaż nie jest wystawiona na zewnątrz
-        </span></span>
-    </section>
+
     <section class="slide" style="background-color:black">
         <figure>
             <img class="cover" src="pictures/KubernetesDemo/22.PNG" alt="blog">
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/22-1.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/22-2.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
             <section class="slide creamPP">
-        <span class="shout colors" ><span>Co jeśli chciałbyś ją zobaczyć do celów testowych?
+        <span class="shout colors" ><span>Co jeśli chciałbyś  zobaczyć Pody do celów testowych?
         </span></span>
     </section>
     <section class="slide" style="background-color:black">
@@ -1948,8 +2369,8 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
-                        <section class="slide creamPP">
-        <span class="shout colors" ><span>Możesz jeszcze to zrobić w inny sposób
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Możesz jeszcze zobaczyć swoje usługi w inny sposób
         </span></span>
     </section>
     <section class="slide" style="background-color:black">
@@ -1982,7 +2403,7 @@
         </span></span>
     </section>
                 <section class="slide creamPP">
-        <span class="shout colors" ><span>Tym razem bez pliku YAML
+        <span class="shout colors" ><span>Bez pliku YAML
         </span></span>
     </section>
     <section class="slide" style="background-color:black">
@@ -2013,7 +2434,13 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
-        <section class="slide" style="background-color:black">
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/37.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
         <figure>
             <img class="cover" src="pictures/KubernetesDemo/35.PNG" alt="blog">
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
@@ -2333,7 +2760,10 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
-
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Warto pouczyć się basha i Pythona
+        </span></span>
+    </section>
 
 
     <section class="slide creamPP">
@@ -2370,7 +2800,10 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
-
+    <section class="slide creamG">
+        <span class="shout colors" ><span>Podsumowanie roku i wasze pytania
+        </span></span>
+    </section>
     
     <!-- <div class="progress"></div> -->
     <footer class="badge badge-top-left">
