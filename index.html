@@ -74,7 +74,11 @@
             <li class="next">Kubernetes Services</li>
         </ol>
     </section> -->
-    <section class="slide creamGG">
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>To 16 webinar w tym roku, a zacząłem robić to w Czerwcu
+        </span></span>
+    </section>
+    <section class="slide creamGG">6
         <span class="shout colors" ><span>Jaki ja problem widzę, z Kubernetesem i Dockerem
         </span></span>
     </section>
@@ -840,6 +844,28 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
+
+
+    <section class="slide creamGG   compact ">
+        <h2>Argumenty</h2>
+        <ol class="nonumbers">
+            <li class="next">-it : uruchamia w środowisku interakcyjnym</li>
+            <li class="next">-rm : usuwa automatycznie kontener bp zakończeniu</li>
+            <li class="next">-p : ustawia przekierowanie portów wewnątrz aplikacji np. z 8090 na 90</li>
+        </ol>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="slide" style="background-color:black">
         <figure>
             <img class="cover" src="pictures/budowanieGo-07.PNG" alt="blog">
@@ -907,6 +933,12 @@
     <section class="slide" style="background-color:black">
         <figure>
             <img class="cover" src="pictures/budowanieGo-10.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/budowanieGo-10-1.PNG" alt="blog">
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
@@ -1001,6 +1033,14 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="slide creamGG   compact ">
+        <h2>Ten docker file zakłada</h2>
+        <ol class="nonumbers">
+            <li class="next">Aplikacja mam już pobrane paczki Nuget</li>
+            <li class="next">Aplikacja jest już zbudowana lub upublikowana</li>
+            <li class="next">Pobierze wszysto w tym nie potrzebne pliki</li>
+        </ol>
     </section>
 
     <section class="slide" style="background-color:black">
@@ -1559,7 +1599,7 @@
         <span class="shout colors" ><span>Architektura Kubernetes
         </span></span>
     </section>
-    <section class="slide" style="background-color:black">
+    <!-- <section class="slide" style="background-color:black">
         <figure>
             <img class="cover" src="pictures/slajdydoK/kubernetes-01.png" alt="blog">
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
@@ -1576,7 +1616,7 @@
             <img class="cover" src="pictures/slajdydoK/kubernetes-03.png" alt="blog">
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
-    </section>
+    </section> -->
     <section class="slide creamPP">
         <span class="shout colors" ><span>Master Node
         </span></span>
@@ -1599,6 +1639,14 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Tak to wygląda w dużym skrócie
+        </span></span>
+    </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Czym jest ta paczka?
+        </span></span>
+    </section>
     <section class="slide" style="background-color:black">
         <figure>
             <img class="cover" src="pictures/slajdydoK/kubernetes-08.png" alt="blog">
@@ -1611,11 +1659,19 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Kubernetes nie uruchami gołych kontenerów/obrazów
+        </span></span>
+    </section>
     <section class="slide" style="background-color:black">
         <figure>
             <img class="cover" src="pictures/slajdydoK/kubernetes-12.png" alt="blog">
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
+    </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Tylko teraz jeśli chcemy skalowanie i samoleczenie to...opakowujemy to w
+        </span></span>
     </section>
     <section class="slide" style="background-color:black">
         <figure>
@@ -1629,11 +1685,19 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Jak to wszystko deifnujemy?<br /> W jakim pliku
+        </span></span>
+    </section>
     <section class="slide" style="background-color:black">
         <figure>
             <img class="cover" src="pictures/slajdydoK/kubernetes-15.png" alt="blog">
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
+    </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Wejdźmy głębiej
+        </span></span>
     </section>
     <section class="slide" style="background-color:black">
         <figure>
@@ -1745,6 +1809,10 @@
         <span class="shout colors" ><span>Dekleratywny styl i stan obserwowany
         </span></span>
     </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Dekleratywny model :<br /> opisujesz w pliku jaki stan jest porządany 
+        </span></span>
+    </section>
     <section class="slide" style="background-color:black">
         <figure>
             <img class="cover" src="pictures/slajdydoK/kubernetes-35.png" alt="blog">
@@ -1827,6 +1895,19 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/zmieniajace sie IP.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/slajdydoK/zmieniajace sie IP-2.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+
 
     <section class="slide" style="background-color:black">
         <figure>
@@ -2207,6 +2288,12 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section> -->
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/happylittlepods.png" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
     <section class="slide creamPP">
         <span class="shout colors" ><span>Co ja właściwie zrobiłem ?
         </span></span>
@@ -2236,6 +2323,10 @@
         </figure>
     </section>
     <section class="slide creamPP">
+        <span class="shout colors" ><span>W sumie to nikt nie tworzy gołych podów
+        </span></span>
+    </section>
+    <section class="slide creamPP">
         <span class="shout colors" ><span>Potrzebujemy pośrednika sieciowego
         </span></span>
     </section>
@@ -2263,8 +2354,8 @@
     <section class="slide creamPP   compact ">
         <h2>Jakie serwisy do komunikowania mamy?</h2>
         <ol class="nonumbers">
-            <li class="next">NodePort</li>
-            <li class="next">LoadBalancer</li>
+            <li class="next">NodePort : Połączenie przez nody</li>
+            <li class="next">LoadBalancer : Połączenie przez chmurowy load-balancer</li>
         </ol>
     </section>
     <section class="slide" style="background-color:black">
@@ -2381,6 +2472,16 @@
             </div>
         </div>
     </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Swoją drogą utworzy to nowe Pody i opakuje to w deployment
+        </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/KubernetesDemo/nowypody.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
 
 
     <section class="slide" style="background-color:black">
@@ -2402,7 +2503,7 @@
         </span></span>
     </section>
     <section class="slide creamPP">
-        <span class="shout colors" ><span>Bez pliku YAML
+        <span class="shout colors" ><span>Bez pliku YAML czyli imperatywnie
         </span></span>
     </section>
     <section class="slide" style="background-color:black">
@@ -2508,8 +2609,8 @@
         <span class="shout colors" ><span>Utwórzmy load balancer na podstawie deployment, który wystawi naszą aplikacje na świat
         </span></span>
     </section>
-                <section class="slide creamPP">
-        <span class="shout colors" ><span>Bez pliku YAML
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Bez pliku YAML czyli imperatywnie
         </span></span>
     </section>
     <section class="slide" style="background-color:black">
@@ -2559,7 +2660,161 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
+    <section class="slide creamPP">
+        <span class="shout colors" ><span>Co jeśli chce to skalować 🤔
+        </span></span>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/skalowanie/01.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle PP"> 
+                <h2 class="headerCODE">Plik dep-service-dotnet copy.yaml</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 17px;overflow: hidden;  " class="language-yaml">
+                    <code style="line-height: 17px !important;">
+                        apiVersion: apps/v1
+                        kind: Deployment
+                        metadata:
+                          name: happy-hello-world-donet
+                        spec:
+                          replicas: 3
+                          selector:
+                            matchLabels:
+                              app: happylittleapp
+                          template:
+                            metadata:
+                              labels:
+                                app: happylittleapp
+                            spec:
+                              containers:
+                              - name: dotnetservice
+                                image: myaspnetcorefornet5service
+                                imagePullPolicy: IfNotPresent
+                                ports:
+                                  - containerPort: 90
+                                resources:
+                                  limits:
+                                    cpu: 1000m
+                                    memory: 1Gi
+                                  requests:
+                                    cpu: 500m
+                                    memory: 1Gi
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle PP"> 
+                <h2 class="headerCODE">Plik dep-service-node copy.yaml</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 17px;overflow: hidden;  " class="language-yaml">
+                    <code style="line-height: 17px !important;">
+                        apiVersion: apps/v1
+                        kind: Deployment
+                        metadata:
+                          name: happy-hello-world-node
+                        spec:
+                          replicas: 3
+                          selector:
+                            matchLabels:
+                              app: happylittleapp
+                          template:
+                            metadata:
+                              labels:
+                                app: happylittleapp
+                            spec:
+                              containers:
+                              - name: nodeservice
+                                image: mynodeservice
+                                imagePullPolicy: IfNotPresent
+                                ports:
+                                  - containerPort: 1111
+                                resources:
+                                  limits:
+                                    cpu: 1000m
+                                    memory: 1Gi
+                                  requests:
+                                    cpu: 500m
+                                    memory: 1Gi
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/skalowanie/02.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/skalowanie/03.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/skalowanie/04.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/skalowanie/05.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/skalowanie/06.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/skalowanie/07.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/skalowanie/08.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
+    <section class="slide" style="background-color:black">
+        <figure>
+            <img class="cover" src="pictures/skalowanie/09.PNG" alt="blog">
+            <figcaption class="white">Copyright © 2020 Diagram</figcaption>
+        </figure>
+    </section>
 
     <section class="slide creamPP">
         <span class="shout colors" ><span>Sekrety czyli konfiguracje
@@ -2741,7 +2996,7 @@
             <figcaption class="white">Copyright © 2020 Diagram</figcaption>
         </figure>
     </section>
-    <section class="slide prism over bhgry">
+        <section class="slide prism over bhgry">
             <div class="grid-container">
             <div class="HeaderTitle PP"> 
                 <h2 class="headerCODE">deployment.yaml</h2>
@@ -2752,33 +3007,33 @@
                         apiVersion: apps/v1
                         kind: Deployment
                         metadata:
-                          name: aspnet-core-secrets-demo
+                        name: aspnet-core-secrets-demo
                         spec:
-                          replicas: 3
-                          selector:
+                        replicas: 3
+                        selector:
                             matchLabels:
-                              app: aspnet-core-secrets-demo
-                          template:
+                            app: aspnet-core-secrets-demo
+                        template:
                             metadata:
-                              labels:
+                            labels:
                                 app: aspnet-core-secrets-demo
                             spec:
-                              containers:
-                              - name: aspnet-core-secrets-demo
+                            containers:
+                            - name: aspnet-core-secrets-demo
                                 image: aspnet-core-secrets:coolest
                                 ports:
                                 - containerPort: 5555
                                 env:
                                 - name: "ASPNETCORE_ENVIRONMENT"
-                                  value: "Kubernetes"
+                                value: "Kubernetes"
                                 volumeMounts:
                                 - name: secrets
-                                  mountPath: /app/secrets
-                                  readOnly: true
-                              volumes:
-                              - name: secrets
+                                mountPath: /app/secrets
+                                readOnly: true
+                            volumes:
+                            - name: secrets
                                 secret:
-                                  secretName: secret-appsettings
+                                secretName: secret-appsettings
                     </code>
                 </pre>
             </div>
@@ -2792,6 +3047,70 @@
             </div>
         </div>
     </section>
+    <section class="slide prism over bhgry">
+            <div class="grid-container">
+            <div class="HeaderTitle PP"> 
+                <h2 class="headerCODE">deployment.yaml ZOOM </h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 29px;overflow: hidden;  " class="language-yaml">
+                    <code style="line-height: 29px !important;">
+                        apiVersion: apps/v1
+                        kind: Deployment
+                        metadata:
+                        name: aspnet-core-secrets-demo
+                        spec:
+                        replicas: 3
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+        <div class="HeaderTitle PP"> 
+            <h2 class="headerCODE">deployment.yaml ZOOM </h2>
+        </div>
+        <div class="PlaceCodeHere">
+            <pre style="font-size: 26px;overflow: hidden;  " class="language-yaml">
+                <code style="line-height: 26px !important;">
+                          containers:
+                          - name: aspnet-core-secrets-demo
+                            image: aspnet-core-secrets:coolest
+                            ports:
+                            - containerPort: 5555
+                            env:
+                            - name: "ASPNETCORE_ENVIRONMENT"
+                              value: "Kubernetes"
+                            volumeMounts:
+                            - name: secrets
+                              mountPath: /app/secrets
+                              readOnly: true
+                          volumes:
+                          - name: secrets
+                            secret:
+                              secretName: secret-appsettings
+                </code>
+            </pre>
+        </div>
+        <div class="AnswerCode">
+            <div class="pytanie">
+                <h3></h3>
+            </div>
+            <div class="odpowiedz">
+                
+            </div>
+        </div>
+    </div>
+</section>
         <section class="slide" style="background-color:black">
         <figure>
             <img class="cover" src="pictures/sekretyKubernetes/02.PNG" alt="blog">
