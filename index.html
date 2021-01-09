@@ -904,9 +904,11 @@
                         
                         COPY main*.go go.* ./
                         
-                        FROM scratch
                         #budujemy aplikacje
-                        RUN CGO_ENABLED=0 gp build -o /bin/example2_2
+                        RUN CGO_ENABLED=0 go build -o /bin/example2_2
+                        
+                        FROM scratch
+                        COPY --from=build /bin/example2_2 /bin/example2_2
                         
                         EXPOSE 8090
                         
